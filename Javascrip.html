@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+          .button{
+              border: 2px;
+              padding: 3px, 5px;
+              display: inline-block;
+              font-family: 'Times New Roman', Times, serif;
+              background-color: rgb(86, 250, 122);
+              color: deeppink;
+              border-radius: 3px;
+              border-color: blueviolet;
+              font-size: medium;
+          }
+          .button:hover{
+              background-color: crimson;
+              color: cyan;
+          }
+    </style>
+</head>
+<body>
+    <h1>Bla Bla</h1>
+    <button class="button">Ayush Jaiswal 21</button>
+    <script>
+        let bla=document.querySelector('button');
+        bla.addEventListener('click', inputmess);
+        function inputmess(){
+            let ass=prompt("Enter correct Roll");
+            bla.textContent='Ayush Jaiswal '+ass;
+}
+
+    </script>
+</body>
+</html>
